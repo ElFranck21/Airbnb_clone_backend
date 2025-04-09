@@ -38,9 +38,9 @@ ACCOUNT_USERNAME_REQUIRED=False
 ACCOUNT_AUTHENTICATION_METHOD='email'
 ACCOUNT_EMAIL_VERIFICAYION = None
 
-RES_FRAMEWORK={
+REST_FRAMEWORK={
     'DEFAULT_AUTHENTICATION_CLASSES':(
-        'res_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES':(
         'rest_framework.permissions.IsAuthenticated',
